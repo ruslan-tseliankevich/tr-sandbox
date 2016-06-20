@@ -1,0 +1,10 @@
+version: '2'
+services:
+    tenantreference-elasticsearch:
+        container_name: tenantreference-elasticsearch
+        image: elasticsearch:1.7.5
+        # volumes:
+        #     - ~/volumes/jhipster/TenantReference/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300

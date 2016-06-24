@@ -1,0 +1,42 @@
+/*****************************************************************/
+/***************************COLORS********************************/
+/*****************************************************************/
+
+/* PRIMARY BACKGROUND COLORS */
+
+$primary-colors: $color-primary-1, $color-primary-2, $color-primary-3, $color-primary-4;
+
+@for $i from 1 through length($primary-colors) {
+    .bg-primary-#{$i} { background-color: nth($primary-colors, $i); }
+    .text-color-primary-#{$i} { color: nth($primary-colors, $i); }
+}
+
+/* NOTIFICATIONS BACKGROUND COLORS */
+
+$notifications-colors: $color-notifications-1, $color-notifications-2, $color-notifications-3;
+
+@for $i from 1 through length($notifications-colors) {
+    .bg-notifications-#{$i} { background-color: nth($notifications-colors, $i); }
+    .text-color-notifications-#{$i} { color: nth($notifications-colors, $i); }
+}
+
+/* GREY BACKGROUND COLORS */
+
+$grey-colors: $color-grey-1, $color-grey-2, $color-grey-3, $color-grey-4, $color-grey-5;
+
+@for $i from 1 through length($grey-colors) {
+    .bg-grey-#{$i} { background-color: nth($grey-colors, $i); }
+    .text-color-grey-#{$i} { color: nth($grey-colors, $i); }
+}
+
+/* SECONDARY BACKGROUND COLORS */
+
+$secondary-colors: $color-secondary-1, $color-secondary-2, $color-secondary-3,
+                   $color-secondary-4, $color-secondary-5, $color-secondary-6,
+                   $color-secondary-7, $color-secondary-8, $color-secondary-9,
+                   $color-secondary-10, $color-secondary-11, $color-secondary-12;
+
+@for $i from 1 through length($secondary-colors) {
+    .bg-secondary-#{$i} { background-color: nth($secondary-colors, $i); }
+    .text-color-secondary-#{$i} { color: nth($secondary-colors, $i); }
+}

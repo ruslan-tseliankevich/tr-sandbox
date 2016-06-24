@@ -1,0 +1,99 @@
+/*****************************************************************/
+/***************************COLORS********************************/
+/*****************************************************************/
+
+/* PRIMARY */
+
+$color-primary-1: #2D9FFF;
+$color-primary-2: #333B40; //FROM 3 TO 2
+$color-primary-3: #515A5F; //FROM 4 TO 3
+$color-primary-4: #FFFFFF; //FROM 5 TO 4
+
+/* NOTIFICATIONS */
+
+$color-notifications-1: #39C48E;
+$color-notifications-2: #FFB946;
+$color-notifications-3: #FE5F55;
+
+/* GREY */
+
+$color-grey-1: #F5F5F5;
+$color-grey-2: #EAEAEA;
+$color-grey-3: #DFDFDF;
+$color-grey-4: #BFC2C4;
+$color-grey-5: #9DA3A5;
+
+/* SECONDARY */
+
+$color-secondary-1: #F97273;
+$color-secondary-2: #E0B334;
+$color-secondary-3: #09D2B0;
+$color-secondary-4: #8895A7;
+$color-secondary-5: #8076E9;
+$color-secondary-6: #D52E7B;
+$color-secondary-7: #E96932;
+$color-secondary-8: #057D71;
+$color-secondary-9: #4B5C63;
+$color-secondary-10: #402C83;
+$color-secondary-11: #b6bfcb;
+$color-secondary-12: #007EE5; //PREVIOUSLY COLOR-PRIMARY-2
+
+
+/*****************************************************************/
+/***************************TYPOGRAPHY****************************/
+/*****************************************************************/
+$font-family-sans-serif:  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-size-base: 16px !default;
+
+$font-size-h1: 52px;
+$font-size-h2: 34px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: $font-size-base;
+$font-size-h6: $font-size-base;
+
+
+/*****************************************************************/
+/******************************LAYOUT*****************************/
+/*****************************************************************/
+
+// sidebar width 
+// used by both sidebar and the main content
+$yoti-portal-sidebar-width : 240px;
+$yoti-portal-sidebar-height : 60px;
+$border-radius-base: 2px;
+
+//navbar
+$navbar-height:60px;
+
+/*****************************************************************/
+/******************************Buttons*****************************/
+/*****************************************************************/
+$btn-border-radius-base: 2px;
+$btn-border-radius-large: 2px;
+$btn-border-radius-small: 2px;
+
+
+/*****************************************************************/
+/******************************Alerts*****************************/
+/*****************************************************************/
+$alert-padding: 30px;
+$alert-warning-bg: $color-notifications-2;
+$alert-warning-border: $color-notifications-2;
+$alert-warning-text: $color-primary-4;
+
+/*****************************************************************/
+/******************************Modal*****************************/
+/*****************************************************************/
+$modal-header-border-color: transparent;
+
+/*****************************************************************/
+/******************************Progress*****************************/
+/*****************************************************************/
+$progress-border-radius: 0;
+
+/*****************************************************************/
+/*******************************Code******************************/
+/*****************************************************************/
+$code-color: $color-secondary-3;
+$code-bg: $color-secondary-9;

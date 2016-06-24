@@ -1,0 +1,43 @@
+.qr_code-container {
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 40px;
+
+  .icon-logo_circle {
+    position: absolute; //https://github.com/kazuhikoarase/qrcode-generator/issues/18
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    zoom: 0.7;
+  }
+
+  img {
+    border: 6px solid white;
+    margin: 34px;
+    width: 140px;
+  }
+
+  .timed-out {
+    position: absolute;
+    background-color: rgba(52, 156, 244, 0.96);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    padding: 33px;
+    color: white;
+    cursor:pointer;
+
+    .icon {
+      display:inline-block;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.policy-details li{
+  margin: 15px 20px;
+}

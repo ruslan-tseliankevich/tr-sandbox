@@ -1,0 +1,20 @@
+.togglebutton {
+    padding-left: 15px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+
+    label {
+        input[type=checkbox] + .toggle {
+            background-color: $color-grey-3;
+            
+        }
+
+        input[type=checkbox]:checked + .toggle {
+            background-color: rgba(136, 149, 167, 0.5);
+
+            &:after {
+                background-color: $color-secondary-4;
+            }
+        }
+    }
+}

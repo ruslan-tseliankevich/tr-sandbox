@@ -1,0 +1,41 @@
+.modal-content {
+    border-radius: $border-radius-base;
+
+    .modal-header {
+        background-color: $color-grey-2;
+        h2 {
+            font-size:24px;
+        }
+        h3 {
+            font-size:16px;
+            line-height:24px;
+            margin-top:11px;
+        }
+
+        &.has-tabs {
+            padding-bottom: 0;
+        }
+    }
+
+    .modal-body {
+        p {
+            margin-bottom:20px;
+        }
+        ul.modal-tabs {
+            background-color: $color-grey-2;
+            padding-bottom:10px;
+            margin-bottom:30px;
+
+            li {
+                font-size: 14px;
+                font-weight: 500;
+                cursor:pointer;
+                color: $color-grey-5;
+            }
+        }
+        h1, h2, h3, h4, h5 {
+            color: $color-primary-3;
+            margin: 0 0 20px;
+        }
+    }
+}

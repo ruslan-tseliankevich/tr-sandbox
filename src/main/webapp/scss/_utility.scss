@@ -1,0 +1,33 @@
+//--------vertical rhythm
+$vertical-spacing: 20px;
+
+@for $i from 0 through 10 {
+    .margin-xs-top-#{$i} { margin-top: $vertical-spacing*$i;}
+    .margin-xs-bottom-#{$i} { margin-bottom: $vertical-spacing*$i;}
+    .padding-xs-top-#{$i} { padding-top: $vertical-spacing*$i;}
+    .padding-xs-bottom-#{$i} { padding-bottom: $vertical-spacing*$i;}
+}
+@media (min-width: $screen-sm-min) {
+    @for $i from 0 through 10 {
+        .margin-sm-top-#{$i} { margin-top: $vertical-spacing*$i;}
+        .margin-sm-bottom-#{$i} { margin-bottom: $vertical-spacing*$i;}
+        .padding-sm-top-#{$i} { padding-top: $vertical-spacing*$i;}
+        .padding-sm-bottom-#{$i} { padding-bottom: $vertical-spacing*$i;}
+    }
+}
+@media (min-width: $screen-md-min) {
+    @for $i from 0 through 10 {
+        .margin-md-bottom-#{$i} { margin-bottom: $vertical-spacing*$i;}
+        .margin-md-top-#{$i} { margin-top: $vertical-spacing*$i;}
+        .padding-md-top-#{$i} { padding-top: $vertical-spacing*$i;}
+        .padding-md-bottom-#{$i} { padding-bottom: $vertical-spacing*$i;}
+    }
+}
+@media (min-width: $screen-lg-min) {
+    @for $i from 0 through 10 {
+        .margin-lg-top-#{$i} { margin-bottom: $vertical-spacing*$i; }
+        .margin-lg-bottom-#{$i} { margin-bottom: $vertical-spacing*$i; }
+        .padding-lg-top-#{$i} { padding-top: $vertical-spacing*$i;}
+        .padding-lg-bottom-#{$i} { padding-bottom: $vertical-spacing*$i;}
+    }
+}

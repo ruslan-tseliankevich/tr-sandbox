@@ -1,0 +1,143 @@
+.form-group  {
+	position: relative;
+	padding-bottom: 36px;
+
+	.help-block {
+		display: block;
+		clear:both;
+		font-style: italic;
+		color: $color-primary-4;
+	}
+
+	label.control-label {
+		color: $color-secondary-4;
+	}
+
+	&:not(.is-empty) {
+		label.control-label {
+			color: $color-primary-1;
+		}
+	}
+
+	&.has-error {
+		label.control-label,
+		.help-block {
+			color: $color-notifications-3
+		}
+	}
+
+	.input-group {
+		width: 100%;
+	}
+
+	&.is-required {
+		.input-group:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 26px;
+			display: block;
+			border-radius: 100%;
+			width: 0;
+			height: 0;
+			border: 2.5px solid $color-notifications-3;
+		}
+	}
+
+	&.has-icon {
+		input,
+		label {
+			padding-left: 25px;
+		}
+
+		.icon {
+			position: absolute;
+			left: 0;
+			bottom: 16px;
+		}
+	}
+
+
+	//Checkbox
+
+	.checkbox {
+		label {
+			color: $color-primary-3;
+		}
+		.checkbox-material{
+			margin-right: 10px;
+			.check {
+				border-radius: $border-radius-base;
+				border-color: $color-grey-4;
+			}
+		} 
+	}
+
+	//override bootstrap material to remove ripples
+	input[type=checkbox] {
+	  &:checked {
+	    & + .checkbox-material .check:before { animation: none; }
+	    & + .checkbox-material:before { animation: none; }
+	    & + .checkbox-material .check:after { animation: none; }
+	  }
+
+	  &:not(:checked) {
+	    & + .checkbox-material:before { animation: none; }
+	    & + .checkbox-material .check:after { animation: none; }
+	  }
+	}
+
+
+	//At the moment it's only about file-type
+	.btn {
+		padding-bottom:0
+	}
+
+	&.has-success {
+		@include form-group-validation-state(has-success, $color-grey-4);
+
+		&.is-focused {
+			@include form-group-validation-state(has-success, $brand-primary);
+		}
+	}
+}
+
+//Dropdown component
+.yoti-dropdown {
+	max-width:130px;
+	ul {
+		padding-left:0;
+		li:not(.divider) {
+			display:block;
+			padding-left:40px;
+			padding-top:7px;
+			padding-bottom:7px;
+		}
+	}
+
+	.yoti-dropdown-field {
+		width:110px;
+		display:inline-block;
+	}
+
+	.dropdown-menu-container {
+		position:relative;
+	}
+
+	.yoti-dropdown-icon {
+		margin-top:7px;
+
+		.yoti-dropdown-icon-open {
+
+		}
+		.yoti-dropdown-icon-close {
+
+		}
+	}
+
+	.title {
+		border-bottom: 1px solid $color-grey-2;
+		margin-bottom: 10px;
+	}
+}
+

@@ -30,7 +30,9 @@ public class PersistentToken implements Serializable {
 
     @Id
     private String series;
-
+    /**
+     * Yo hoho!
+     */
     @JsonIgnore
     @NotNull
     @Column(name = "token_value", nullable = false)
